@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/Style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <title>Form</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="shop.jpg" alt="FlowerShop" width="60" height="60"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="Index3.html">Home</a>
+              <a class="nav-link" href="#">Products</a>
+              <a class="nav-link" href="FormPage.html">Customer Form</a>
+            </div>
+          </div>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+
+
+
+
+    <h1 id="Heading" class="display-5">New Customer Form</h1>
+    <br> <br>
+
+    <form method="POST" action="Index3.html">
+        <fieldset>
+            <label><b>First Name</b></label>
+            <input type="text" id="firstname">
+            <label><b>Last Name</b></label>
+            <input type="text" id="lastname">
+            <label><b>Age</b></label>
+            <input type="number" id="age">
+        </fieldset>
+        <br> <br>
+       <b>Who do you send flowers to the most?</b> 
+        <br>
+        <input type="radio" name="radio" value="Family"/>Family
+        <br>
+        <input type="radio" name="radio" value="Friends"/>Friends
+        <br>
+        <input type="radio" name="radio" value="Colleagues"/>Colleagues
+        <br>
+        <input type="radio" name="radio" value="Clients"/>Clients
+        <br>
+        <input type="radio" name="radio" value="None of the above!"/>None of the above!
+        <br> <br>
+        <b>What is your favourite flower?</b> 
+        <br>
+        <select name="Flowers" id="Flowers">
+            <option value="Rose">Rose</option>
+            <option value="Tulip">Tulip</option>
+            <option value="Sunflower">Sunflower</option>
+            <option value="Orchid">Orchid</option>
+            <option value="Peony">Peony</option>
+            <option value="Other">Other</option>
+        </select>
+        <br> <br>
+        <b>How happy are you when you receive flowers as a gift? :)</b> 
+        <br>
+        <label for="">Range</label>
+        <input type="range" min="1" max="10" value="5">
+        <br> <br>
+        <b></b> 
+        <b></b> 
+        <br>
+        <input type="date">
+        <br> <br>
+
+        <p class="Survey thanks">Thanks for filling out the survey!</p>
+
+        <br>
+        <button type="submit" name="submitBtn">SUBMIT</button>
+        <button type="reset" name="resetBtn">RESET</button>
+
+    </form>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
+
+</body>
+</html>
